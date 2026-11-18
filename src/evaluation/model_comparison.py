@@ -25,31 +25,7 @@ METRIC_COLUMNS = [
 
 def summarize_cv_results(fold_results):
     """
-    Aggregate metrics across cross-validation folds.
-
-    Parameters
-    ----------
-    fold_results : list of dictionaries
-
-        Each dictionary represents one model on one fold.
-
-        Example structure:
-        {
-            "model": "Random Forest",
-            "fold": 1,
-            "accuracy": 0.85,
-            "precision": 0.84,
-            "recall": 0.83,
-            "macro_f1": 0.83,
-            "top1_accuracy": 0.80,
-            "log_loss": 0.42,
-            "candidate_miss_rate": 0.05
-        }
-
-    Returns
-    -------
-    pandas.DataFrame
-        Mean and standard deviation of metrics per model.
+    Aggregate evaluation metrics across cross-validation folds.
     """
 
     if not fold_results:
@@ -57,12 +33,8 @@ def summarize_cv_results(fold_results):
 
     df = pd.DataFrame(fold_results)
 
-    required_columns = {"model", "fold"}
-
-    if not required_columns.issubset(df.columns):
-        raise ValueError(
-            "Each result must contain model and fold columns."
-        )
+    if not {"model", "fold"}.issubset(df.columns):
+        raise ValueError("Missing model or fold columns.")
 
     if df[["model", "fold"]].isnull().any().any():
         raise ValueError("Model names and fold numbers cannot be missing.")
@@ -75,31 +47,31 @@ def summarize_cv_results(fold_results):
     if not available_metrics:
         raise ValueError("No evaluation metrics were provided.")
 
-    df[available_metrics] = df[available_metrics].apply(
-        pd.to_numeric, errors="raise"
-    )
+    for metric in available_metrics:
+        df[metric] = pd.to_numeric(df[metric], errors="raise")
 
     if df[available_metrics].isnull().any().any():
         raise ValueError("Metric values cannot be missing.")
 
+    # Calculate mean and standard deviation separately.
+    means = df.groupby("model")[available_metrics].mean()
+    stds = df.groupby("model")[available_metrics].std()
 
-    summary = df.groupby("model")[available_metrics].agg(
-        ["mean", "std"]
+    summary = pd.concat(
+        [means.add_suffix("_mean"), stds.add_suffix("_std")],
+        axis=1
+    ).reset_index()
+
+    fold_counts = (
+        df.groupby("model")["fold"]
+        .nunique()
+        .rename("n_folds")
+        .reset_index()
     )
 
-    summary.columns = [
-        f"{metric}_{statistic}"
-        for metric, statistic in summary.columns
-    ]
-
-    summary = summary.reset_index()
-
-    summary["n_folds"] = (
-        df.groupby("model")["fold"].nunique().values
-    )
+    summary = summary.merge(fold_counts, on="model")
 
     return summary
-
 
 def save_comparison_csv(
     comparison_table,
