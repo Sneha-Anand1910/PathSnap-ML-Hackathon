@@ -189,6 +189,5 @@ By combining intelligent data processing, predictive modelling, and interactive 
 
 ---
 
-**Built with 💙 by Team PathSnap**
 
 *Machine Learning Hackathon Project | 2026*
