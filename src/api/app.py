@@ -1,6 +1,5 @@
-"""Laptop 1 API. Set PATHSNAP_EVAL_DATA_DIR and PATHSNAP_DECODER before use."""
+"""Laptop 1 API. Set PATHSNAP_EVAL_DATA_DIR to the trip-folder parent."""
 
-import importlib
 import logging
 import os
 import re
@@ -14,6 +13,8 @@ from pydantic import BaseModel
 from src.features.create_training_data import align_reference_route, build_candidate_table
 from src.features.feature_engineering import GPSObservation, extract_gps_features
 from src.features.road_network import build_road_network
+from src.reconstruction.evaluation import evaluate_route
+from src.reconstruction.hmm_viterbi import gps_step_distances, group_candidate_rows, viterbi_decode
 from src.training.train_models import FEATURE_COLUMNS, SOURCE_COLUMNS
 
 
@@ -21,7 +22,6 @@ app = FastAPI(title="PathSnap Laptop 1 API")
 TRIP_ID_PATTERN = re.compile(r"^[0-9]{8}$")
 DATA_DIR = Path(os.getenv("PATHSNAP_EVAL_DATA_DIR", "data/evaluation"))
 MODEL_PATH = Path(os.getenv("PATHSNAP_MODEL_PATH", "results/training/gradient-boosting/model.joblib"))
-DECODER_SPEC = os.getenv("PATHSNAP_DECODER", "")
 LOG_PATH = Path(os.getenv("PATHSNAP_API_LOG", "results/api/requests.log"))
 
 logger = logging.getLogger("pathsnap.api")
@@ -70,27 +70,13 @@ def _read_rows(path, columns):
     return frame
 
 
-def _decoder():
-    """Configured callable: decode(candidates_by_observation) -> one arc ID per observation."""
-    if not DECODER_SPEC:
-        raise HTTPException(503, "HMM/Viterbi decoder integration pending")
-    try:
-        module_name, function_name = DECODER_SPEC.split(":", 1)
-        decoder = getattr(importlib.import_module(module_name), function_name)
-        if not callable(decoder):
-            raise TypeError("Decoder is not callable")
-        return decoder
-    except (ValueError, ImportError, AttributeError, TypeError) as exc:
-        raise HTTPException(503, "Configured HMM/Viterbi decoder is unavailable") from exc
-
-
 @app.get("/health")
 def health():
     return {
         "status": "running",
         "model_available": MODEL_PATH.is_file(),
         "evaluation_data_available": DATA_DIR.is_dir(),
-        "decoder_configured": bool(DECODER_SPEC),
+        "decoder_available": True,
     }
 
 
@@ -102,7 +88,7 @@ def trips():
         folder.name for folder in DATA_DIR.iterdir()
         if folder.is_dir() and TRIP_ID_PATTERN.fullmatch(folder.name)
         and all((folder / f"{folder.name}.{suffix}").is_file()
-                for suffix in ("track", "nodes", "arcs"))
+                for suffix in ("track", "nodes", "arcs", "route"))
     )}
 
 
@@ -119,77 +105,65 @@ def predict(request: PredictRequest):
             raise HTTPException(503, "Trained model is unavailable")
         # No reference file is opened or passed to feature engineering here.
         trip = {"trip_id": trip_id, "track": track, "nodes": nodes, "arcs": arcs, "route": []}
-        candidates = build_candidate_table(trip, include_labels=False)
-        if not candidates:
-            raise HTTPException(422, "No road candidates generated for this trip")
-        feature_frame = pd.DataFrame(candidates).rename(columns=SOURCE_COLUMNS)
-        try:
-            model = joblib.load(MODEL_PATH)
-            probabilities = model.predict_proba(feature_frame.loc[:, list(FEATURE_COLUMNS)])
-            class_one = list(model.classes_).index(1)
-        except Exception as exc:
-            logger.exception("prediction failed trip_id=%s", trip_id)
-            raise HTTPException(500, "Model prediction failed") from exc
-
-        by_observation = [[] for _ in range(len(track))]
-        for candidate, probability in zip(candidates, probabilities[:, class_one]):
-            by_observation[int(candidate["observation_idx"])].append({
-                "arc_id": int(candidate["candidate_arc_id"]),
-                "probability": float(probability),
-                "from_node_id": int(candidate["from_node_id"]),
-                "to_node_id": int(candidate["to_node_id"]),
-                "road_length_m": float(candidate["road_length_m"]),
-                "along_arc_fraction": float(candidate["along_arc_fraction"]),
-            })
-        if any(not row for row in by_observation):
-            raise HTTPException(422, "Some GPS observations have no road candidates")
-
-        # Decoder input contains candidates and probabilities only; no reference data.
-        decoder = _decoder()
-        try:
-            predicted = [int(arc_id) for arc_id in decoder(by_observation)]
-        except Exception as exc:
-            logger.exception("decoder failed trip_id=%s", trip_id)
-            raise HTTPException(500, "HMM/Viterbi decoding failed") from exc
-        if len(predicted) != len(by_observation) or any(
-            arc_id not in {candidate["arc_id"] for candidate in row}
-            for arc_id, row in zip(predicted, by_observation)
-        ):
-            raise HTTPException(500, "Decoder returned invalid arc IDs or path length")
-
-        # Reference data is read only after the prediction path is final.
-        reference = _read_rows(folder / f"{trip_id}.route", ["arc_id"])
         try:
             network = build_road_network(nodes.itertuples(index=False, name=None),
                                          arcs.itertuples(index=False, name=None))
             observations = [GPSObservation(*row) for row in track.itertuples(index=False, name=None)]
             gps = extract_gps_features(observations, network.projection)
+            points = [(row["x_m"], row["y_m"]) for row in gps]
+            candidates = build_candidate_table(trip, include_labels=False)
+        except (ValueError, TypeError, IndexError) as exc:
+            raise HTTPException(422, "Trip geometry or GPS data is invalid") from exc
+        if not network.segments:
+            raise HTTPException(422, "Trip road network has no arcs")
+        feature_frame = pd.DataFrame(candidates).rename(columns=SOURCE_COLUMNS)
+        try:
+            model = joblib.load(MODEL_PATH)
+            probabilities = (
+                model.predict_proba(feature_frame.loc[:, list(FEATURE_COLUMNS)])[
+                    :, list(model.classes_).index(1)
+                ] if candidates else []
+            )
+        except Exception as exc:
+            logger.exception("prediction failed trip_id=%s", trip_id)
+            raise HTTPException(500, "Model prediction failed") from exc
+
+        try:
+            by_observation = group_candidate_rows(candidates, probabilities, len(track))
+            decoded = viterbi_decode(
+                by_observation, network,
+                observed_distances_m=gps_step_distances(points),
+                projected_points_xy=points,
+            )
+            predicted = decoded.predicted_arc_ids
+        except Exception as exc:
+            logger.exception("decoder failed trip_id=%s", trip_id)
+            raise HTTPException(500, "HMM/Viterbi decoding failed") from exc
+        if len(predicted) != len(track) or any(arc_id is None for arc_id in predicted):
+            raise HTTPException(500, "Decoder did not return one arc ID per GPS observation")
+
+        # Reference data is read only after the prediction path is final.
+        reference = _read_rows(folder / f"{trip_id}.route", ["arc_id"])
+        try:
             expected = align_reference_route(
-                [(row["x_m"], row["y_m"]) for row in gps],
+                points,
                 reference["arc_id"].astype(int).tolist(), network,
             )
+            metrics = evaluate_route(predicted, expected, network)
         except (ValueError, TypeError, IndexError) as exc:
             raise HTTPException(422, "Reference route cannot be evaluated") from exc
-        segments = {segment.arc_id: segment for segment in network.segments}
-        connected = sum(
-            left == right or segments[left].to_node_id == segments[right].from_node_id
-            for left, right in zip(predicted, predicted[1:])
-        )
-        transitions = max(0, len(predicted) - 1)
         result = {
             "trip_id": trip_id,
             "predicted_arc_ids": predicted,
-            "accuracy": sum(a == b for a, b in zip(predicted, expected)) / len(expected),
+            "accuracy": metrics["accuracy"],
             "accuracy_method": "per-observation agreement with server-side route alignment heuristic",
-            "route_continuity": {
-                "connected_transitions": connected,
-                "total_transitions": transitions,
-                "fraction": connected / transitions if transitions else 1.0,
-            },
+            "route_continuity": metrics["route_continuity"],
             "diagnostics": {
                 "observations": len(track),
                 "candidates": len(candidates),
-                "decoder": DECODER_SPEC,
+                "empty_candidate_observations": len(decoded.empty_candidate_observations),
+                "fallback_observations": len(decoded.fallback_observation_indices),
+                "disconnected_transitions": decoded.disconnected_transition_count,
             },
         }
         logger.info("predict completed trip_id=%s observations=%s", trip_id, len(track))
