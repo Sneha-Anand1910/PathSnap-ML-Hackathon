@@ -49,6 +49,7 @@ def calculate_classification_metrics(y_true, y_pred):
 
 
 def calculate_top1_accuracy(
+    trip_ids,
     observation_ids,
     y_true,
     y_scores
@@ -56,18 +57,20 @@ def calculate_top1_accuracy(
     """
     Calculate observation-level Top-1 Accuracy.
 
-    For each GPS observation:
-    1. Find the candidate with the highest model score.
-    2. Check whether that candidate has label 1.
-    3. Calculate the fraction of correctly selected candidates.
+    Each GPS observation is uniquely identified by
+    its trip_id and observation_id.
     """
 
+    import numpy as np
+
+    trip_ids = np.asarray(trip_ids)
     observation_ids = np.asarray(observation_ids)
     y_true = np.asarray(y_true)
     y_scores = np.asarray(y_scores)
 
     if not (
-        len(observation_ids) == len(y_true) == len(y_scores)
+        len(trip_ids) == len(observation_ids)
+        == len(y_true) == len(y_scores)
     ):
         raise ValueError("All input arrays must have equal lengths.")
 
@@ -80,15 +83,17 @@ def calculate_top1_accuracy(
     if not np.isfinite(y_scores).all():
         raise ValueError("Scores must be finite.")
 
+    observation_groups = {}
+
+    for i, key in enumerate(zip(trip_ids, observation_ids)):
+        observation_groups.setdefault(key, []).append(i)
+
     observation_results = []
 
-    for obs_id in np.unique(observation_ids):
-        indices = np.where(observation_ids == obs_id)[0]
+    for indices in observation_groups.values():
 
-        # Select the candidate with the highest score.
         best_index = indices[np.argmax(y_scores[indices])]
 
-        # Check whether the selected candidate is correct.
         observation_results.append(y_true[best_index] == 1)
 
     return float(np.mean(observation_results))
