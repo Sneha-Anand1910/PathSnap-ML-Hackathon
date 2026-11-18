@@ -5,7 +5,7 @@ from heapq import heappop, heappush
 from math import inf, log
 from typing import Mapping, Sequence
 
-from src.features.road_network import RoadNetwork
+from src.features.road_network import RoadNetwork, point_to_segment_distance
 
 
 @dataclass(frozen=True)
@@ -14,6 +14,7 @@ class DecodeResult:
     log_score: float
     decoded_observations: int
     empty_candidate_observations: list[int]
+    fallback_observation_indices: list[int]
     disconnected_transition_count: int
 
 
@@ -133,18 +134,20 @@ def _decode_segment(observations, network, graph, observed_distances_m, beta_m, 
 
 
 def viterbi_decode(candidate_sequences, network: RoadNetwork, *,
-                   observed_distances_m=None, max_connector_hops=4,
+                   observed_distances_m=None, projected_points_xy=None, max_connector_hops=4,
                    beta_m=50.0, disconnected_penalty=20.0) -> DecodeResult:
     """Decode a coherent arc sequence from per-observation model scores.
 
     Each candidate mapping needs arc ID, probability/score, endpoint node IDs,
-    road_length_m and optionally along_arc_fraction. Empty lists yield None and
-    split decoding into independent segments.
+    road_length_m and optionally along_arc_fraction. Empty lists split decoding;
+    nearest-network fallback is used when projected_points_xy is supplied.
     """
     if beta_m <= 0 or disconnected_penalty <= 0:
         raise ValueError("beta_m and disconnected_penalty must be positive.")
     if observed_distances_m is not None and len(observed_distances_m) != max(0, len(candidate_sequences) - 1):
         raise ValueError("observed_distances_m must have one value between adjacent observations.")
+    if projected_points_xy is not None and len(projected_points_xy) != len(candidate_sequences):
+        raise ValueError("projected_points_xy must have one point per observation.")
     graph = RoadTransitionGraph(network, max_connector_hops)
     predictions = [None] * len(candidate_sequences)
     empty = [i for i, states in enumerate(candidate_sequences) if not states]
@@ -168,11 +171,21 @@ def viterbi_decode(candidate_sequences, network: RoadNetwork, *,
         total_score += score
         disconnected_total += disconnected
         start = end
+    fallback_indices = []
+    if projected_points_xy is not None and network.segments:
+        for index in empty:
+            point = projected_points_xy[index]
+            nearest = min(network.segments, key=lambda segment: point_to_segment_distance(
+                point, segment.start_xy, segment.end_xy
+            ))
+            predictions[index] = nearest.arc_id
+            fallback_indices.append(index)
     return DecodeResult(
         predicted_arc_ids=predictions,
         log_score=total_score,
         decoded_observations=len(candidate_sequences) - len(empty),
         empty_candidate_observations=empty,
+        fallback_observation_indices=fallback_indices,
         disconnected_transition_count=disconnected_total,
     )
 
