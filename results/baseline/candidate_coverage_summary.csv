@@ -1,0 +1,12 @@
+﻿metric,value
+trips,80
+gps_observations,208417
+candidate_rows,922986
+reference_present_observations,182405
+reference_missing_observations,26012
+candidate_recall_against_alignment_heuristic,87.519252 %
+candidate_miss_rate_against_alignment_heuristic,12.480748 %
+candidate_radius_m,100
+max_candidates,5
+alignment,monotonic route-sequence alignment; 500 m search radius; beam width 24; advance penalty 1 m
+caveat,Reference arc IDs are inferred from route alignment; not direct per-observation ground truth
