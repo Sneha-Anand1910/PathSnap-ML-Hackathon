@@ -22,19 +22,21 @@ Optional observed_distances_m contains the projected GPS displacement between ea
         candidate_sequences,
         network,
         observed_distances_m=observed_distances_m,
+        projected_points_xy=points_xy,
     )
 
 ## Decoder output
 
 DecodeResult contains:
 
-- predicted_arc_ids: one arc ID per GPS observation; None where no candidates were supplied
+- predicted_arc_ids: one arc ID per GPS observation when projected points are supplied; nearest-network fallback for empty candidate lists
 - log_score: score of the selected decoded sequence
 - decoded_observations: count with at least one candidate
 - empty_candidate_observations: indices where candidate generation returned no rows
+- fallback_observation_indices: which of those used nearest-network fallback
 - disconnected_transition_count: transitions that needed the disconnected fallback penalty
 
-The decoder uses model probabilities as emissions. It rewards transitions along directed, connected roads and compares road-path distance with GPS displacement. If a candidate list is empty, it returns None for that observation and decodes the sequence segments on either side independently.
+The decoder uses model probabilities as emissions. It rewards transitions along directed, connected roads and compares road-path distance with GPS displacement. If a candidate list is empty, it decodes the sequence segments on either side independently and uses the nearest network arc as a flagged fallback when projected GPS coordinates are supplied.
 
 ## Proposed UI/API flow
 
@@ -45,3 +47,6 @@ The PDF specifies this trip-ID flow and server-side ground-truth handling but do
 ## Limits to communicate
 
 The candidate generator's top-five limit can omit the reference arc. The decoder cannot select an arc absent from the candidate list. The route labels are also heuristic because .route contains sequence order but no direct GPS timestamp mapping. Tune transition settings with training and student-development trips only, and compare classifier-only versus HMM output.
+
+
+Evaluation helpers compare independent top-probability candidate selection against HMM output using observation accuracy and directed route continuity. Reference arc IDs are only used after decoding for scoring and must not enter prediction.
