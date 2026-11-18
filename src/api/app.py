@@ -8,6 +8,7 @@ from pathlib import Path
 import joblib
 import pandas as pd
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from src.features.create_training_data import align_reference_route, build_candidate_table
@@ -19,6 +20,17 @@ from src.training.train_models import FEATURE_COLUMNS, SOURCE_COLUMNS
 
 
 app = FastAPI(title="PathSnap Laptop 1 API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://10.1.33.250:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 TRIP_ID_PATTERN = re.compile(r"^[0-9]{8}$")
 DATA_DIR = Path(os.getenv("PATHSNAP_EVAL_DATA_DIR", "data/evaluation"))
 MODEL_PATH = Path(os.getenv("PATHSNAP_MODEL_PATH", "results/training/gradient-boosting/model.joblib"))
