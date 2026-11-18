@@ -82,10 +82,6 @@ def summarize_cv_results(fold_results):
     if df[available_metrics].isnull().any().any():
         raise ValueError("Metric values cannot be missing.")
 
-    if not df[available_metrics].map(
-        lambda column: column.map(lambda value: pd.notna(value))
-    ).all().all():
-        raise ValueError("Invalid metric values.")
 
     summary = df.groupby("model")[available_metrics].agg(
         ["mean", "std"]
