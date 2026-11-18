@@ -1,0 +1,3120 @@
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000001
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 8
+arcs: 292
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 525
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000002
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 262
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 1
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000003
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 3
+arcs: 6
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 79
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000004
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 5
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 320
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000005
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 105
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000006
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 261
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000008
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 12
+route: 1
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 173
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000010
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 7
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 210
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000011
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 565
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000012
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 205
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000013
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 129
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 788
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000014
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 164
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000016
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 1
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 204
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000018
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 9
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 166
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000019
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 5
+arcs: 86
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 545
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 3
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000020
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 142
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000021
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 277
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000022
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 4
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 376
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000024
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 102
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 249
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000025
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 11
+arcs: 128
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 283
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000026
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 197
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000027
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 138
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000028
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 3
+arcs: 8
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 618
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000029
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 9
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 204
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000031
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 4
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 432
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000032
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 4
+arcs: 80
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 819
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000033
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 169
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 1
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000034
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 4
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 454
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000035
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 38
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 403
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000036
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 156
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000037
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 3
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 163
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000038
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 1
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 221
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000039
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 161
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000041
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 340
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 1
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000042
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 1440
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 1
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000043
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 3
+arcs: 322
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 427
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000044
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 130
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000045
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 59
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000046
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 66
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000047
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 4
+arcs: 27
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 188
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000048
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 149
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000050
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 94
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000051
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 299
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000053
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 28
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 754
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000054
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 96
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 422
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000055
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 12
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 475
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000057
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 1
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 300
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000058
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 15
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 345
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000060
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 520
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000061
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 8
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 296
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000062
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 17
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 497
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000063
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 10
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 565
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000064
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 4
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 692
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000066
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 365
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000068
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 240
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000069
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 29
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 467
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 1
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000070
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 149
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000071
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 186
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000072
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 131
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000074
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 7
+arcs: 96
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 305
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000075
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 2
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 108
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 2
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000078
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 38
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 1765
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000079
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 27
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 182
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000080
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 10
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 139
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 1
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000081
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 6
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 778
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000082
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 204
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000083
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 3
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 143
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000084
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 3
+arcs: 13
+route: 2
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 627
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000085
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 170
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000086
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 4
+arcs: 63
+route: 2
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 671
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 1
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000088
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 2
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 163
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000089
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 265
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 1
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+WARNING: Some consecutive route segments are disconnected
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000090
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 1
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 235
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000092
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 1
+arcs: 4
+route: 14
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 2266
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000093
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 17
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 590
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000095
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 7
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 306
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000096
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 3
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 456
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000097
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 444
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000098
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 0
+arcs: 10
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 1003
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
+
+==================================================
+DATA VALIDATION REPORT
+Trip ID: 00000099
+==================================================
+
+1. MISSING VALUES
+track: 0
+nodes: 0
+arcs: 0
+route: 0
+
+2. DUPLICATE RECORDS
+track: 0
+nodes: 2
+arcs: 7
+route: 0
+
+3. GPS COORDINATES
+Invalid GPS rows: 0
+
+4. TIMESTAMP VALIDATION
+Chronological order: True
+Duplicate timestamps: 0
+
+5. ROAD NETWORK VALIDATION
+Invalid arc connections: 0
+
+6. ROUTE VALIDATION
+Total route segments: 886
+Invalid route arc IDs: 0
+
+7. ROUTE CONNECTIVITY
+Disconnected consecutive segments: 0
+
+==================================================
+VALIDATION SUMMARY
+==================================================
+No validation issues detected.
