@@ -1,0 +1,2 @@
+total_observations,covered_observations,missed_observations,candidate_miss_rate,candidate_coverage,status
+207071,182407,24664,0.11910890467520802,0.8808910953247919,Estimated - reference labels inferred from route alignment
