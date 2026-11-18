@@ -59,6 +59,7 @@ def run_evaluation(prediction_file):
         )
 
         metrics["top1_accuracy"] = calculate_top1_accuracy(
+            group["trip_id"].to_numpy(),
             group["observation_id"].to_numpy(),
             y_true,
             y_prob
